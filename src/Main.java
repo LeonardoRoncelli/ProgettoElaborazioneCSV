@@ -1,10 +1,9 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.util.Random;
 
 public class Main {
     public static void main(String[]args){
+        Random random=new Random();
         String nomeFile= "roncelli.csv";
         File file=new File(nomeFile);
         if(file.exists()) {
@@ -16,6 +15,10 @@ public class Main {
                     linea = br.readLine();
                 }
             } catch (IOException e) {
+                e.printStackTrace();
+            }
+            try(BufferedWriter bw=new BufferedWriter(new FileWriter("roncelli.csv",true))){
+            }catch (IOException e){
                 e.printStackTrace();
             }
         }else{

@@ -19,8 +19,10 @@ public class Main {
             }
             try(BufferedWriter bw=new BufferedWriter(new FileWriter("roncelli.csv",true))){
                 int num;
-                while() {
+                int conta=0;
+                while(conta<473) {
                     num = random.nextInt();
+                    conta++;
                 }
             }catch (IOException e){
                 e.printStackTrace();

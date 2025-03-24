@@ -18,6 +18,10 @@ public class Main {
                 e.printStackTrace();
             }
             try(BufferedWriter bw=new BufferedWriter(new FileWriter("roncelli.csv",true))){
+                int num;
+                while() {
+                    num = random.nextInt();
+                }
             }catch (IOException e){
                 e.printStackTrace();
             }
